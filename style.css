@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/*#region*/ /*header*/
 .header {
     display: flex;
     flex-direction: row;
@@ -15,23 +15,31 @@ body {
     color: white;
     background-color: #1f2937;
     font-weight: 900;
+    margin-left: 8px;
 }
 
 .headerLinks {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 20px;
     color: white;
+    margin-right: 8px;
 }
+/*#endregion*/
 
-
-
+/*default for all the big content boxes*/
+/*should I be setting size for these?*/  
 .contentBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 24px 200px;
+}
+
+/*#region*/ /*Content box 1*/
+.content1 {
+    background-color: #1f2937;
 }
 
 /* for This webiste is awesome */
@@ -40,4 +48,134 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     flex: auto;
+    flex: 1;
+    gap: 4px;
 }
+
+.box1Title {
+    color: white;
+    background-color: inherit;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.box1Text1 {
+    color: #f9faf8;
+    background-color: inherit;
+}
+
+button {
+    border-radius: 8px; /*curved edges. 12px also curves nicely*/
+    border-color: #3882f6;
+    border-style: solid;
+    background-color: #3882f6;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+/* just needs flex*/
+.img1 {
+    flex: 1;
+    background-color: gray;
+}
+/*#endregion*/
+
+/*#region*/ /*Content box 2*/
+.column {
+    flex-direction: column;
+    gap: 20px;
+}
+.box2Title {
+    font-size: 40px;
+    color: black;
+    font-weight: 900;
+}
+.box2 {
+    display: flex;
+    gap: 12px;
+}
+
+.imageAndCaption {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.img2 {
+    border-style: ridge;
+    border-color: #3882f6;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+}
+.captionText {
+    color: rgb(49, 49, 49);
+}
+
+/*#endregion*/
+
+/*#region*/ /*Content box 3*/
+.greyBckgrnd {
+    background-color: #e5e7eb;
+}
+
+.quote1 {
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quoter1 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-left: auto;
+    font-weight: bold;
+}
+/*#endregion*/
+
+/*#region*/ /*Content box 4*/
+.box4 {
+    display: flex;
+    flex-direction:row;
+    background-color: #3882f6;
+    width: 700px;
+    height: 120px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: #3882f6;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.subBox4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.box4Text1 {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.box4Text2 {
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.button4 {
+    border-color: white;
+}
+/*#endregion*/
+
+/*#region*/ /*Footer*/
+.footer {
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/*#endregion*/
